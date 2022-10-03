@@ -1,0 +1,47 @@
+{
+  "_id": "c48cb6ae-82b4-4dc3-97a5-a70d1fd62bdf",
+  "clientId": "react-client",
+  "clientSecret": "{noop}secret",
+  "clientName": "c48cb6ae-82b4-4dc3-97a5-a70d1fd62bdf",
+  "clientAuthenticationMethods": [
+    {
+      "value": "client_secret_basic"
+    }
+  ],
+  "authorizationGrantTypes": [
+    {
+      "value": "refresh_token"
+    },
+    {
+      "value": "client_credentials"
+    },
+    {
+      "value": "password"
+    },
+    {
+      "value": "authorization_code"
+    }
+  ],
+  "redirectUris": [
+    "http://127.0.0.1:3000/authorize"
+  ],
+  "scopes": [
+    "openid",
+    "message.read",
+    "message.write"
+  ],
+  "clientSettings": {
+    "settings": {
+      "settings#client#require-proof-key": true,
+      "settings#client#require-authorization-consent": false
+    }
+  },
+  "accessTokenTimeToLive": 300000,
+  "accessTokenFormat": {
+    "value": "self-contained"
+  },
+  "reuseRefreshTokens": true,
+  "refreshTokenTimeToLive": 3600000,
+  "idTokenSignatureAlgorithm": "RS256",
+  "_class": "com.oauth.authservermongo.domain.MongoClient"
+}
